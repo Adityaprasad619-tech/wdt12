@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Epic Games</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<style>
+  /* General Styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url("about.jpeg");
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Add your background image */
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Header Section */
+  header {
+    background-color: #2d2d2d;
+    padding: 10px 20px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar .logo a {
+    color: #f0f0f0;
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+  /* Adjust Logo Size */
+  .navbar .logo img {
+    height: 60px;
+    width: auto;
+  }
+
+  .navbar nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  .navbar nav ul li {
+    margin-right: 20px;
+  }
+
+  .navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .auth {
+    display: flex;
+  }
+
+  .auth button {
+    margin-left: 10px;
+    background-color: #444;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .auth button:hover {
+    background-color: #666;
+  }
+  .cart img {
+    width: 30px; /* Set width for the cart logo */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; }
+
+  /* About Us Section */
+  .about-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+  }
+
+  .about-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .about-header h2 {
+    font-size: 32px;
+  }
+
+  .about-header p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .team-section {
+    margin-top: 40px;
+  }
+
+  .team-header {
+    text-align: center;
+  }
+
+  .team-header h3 {
+    font-size: 28px;
+  }
+
+  .team-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .team-card {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .team-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .team-card h4 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .team-card p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  /* Footer Section */
+  footer {
+    background-color: #2d2d2d;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+  footer p {
+    margin: 0;
+  }
+
+</style>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <a href="home.html">
+          <img src="https://logos-world.net/wp-content/uploads/2021/12/Epic-Games-Logo.png" alt="Epic Games Logo">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="lib.html">Library</a></li>
+          <li><a href="support.html">Contact Us</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+
+        </ul>
+      </nav>
+      <div class="auth">
+        <a href="log.html"></a><button class="login-btn">Login</button></a>
+        <a href="signup.html"><button class="signup-btn">Sign Up</button></a>
+        <a href="payment.html"><button class="payment-btn">Checkout</button></a>
+
+      </div>
+      <div class="cart" onclick="window.location.href='addtocart.html'">
+        <img src="https://t3.ftcdn.net/jpg/03/14/85/06/360_F_314850659_2aQLerz30kWj78tqpaGSbzYD6sAUmuDf.jpg" alt="Cart Icon">
+        <span id="cart-count">0</span> items
+      </div>
+    </div>
+  </header>
+
+  <!-- About Us Section -->
+  <div class="about-container">
+    <div class="about-header">
+      <h2>About Us</h2>
+      <p>Welcome to Epic Games! We are a passionate team committed to delivering the best gaming experiences. From thrilling action games to immersive adventures, we strive to create games that challenge and inspire players worldwide. Here's more about us and our mission!</p>
+    </div>
+
+    <div class="team-section">
+      <div class="team-header">
+        <h3>Meet Our Team</h3>
+      </div>
+
+      <div class="team-cards">
+        <!-- Team Member 1 -->
+        <div class="team-card">
+          
+          <h4>John Doe</h4>
+          <p>CEO & Founder</p>
+          <p>John is the visionary behind Epic Games, driving the company forward with passion and innovation. He has over 15 years of experience in the gaming industry.</p>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="team-card">
+          <h4>Jane Smith</h4>
+          <p>Lead Game Designer</p>
+          <p>Jane oversees the development of our top-tier games, ensuring they are immersive and engaging. She loves pushing the boundaries of game design.</p>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="team-card">
+          <h4>Mark Lee</h4>
+          <p>Marketing Director</p>
+          <p>Mark leads the marketing efforts, making sure Epic Games reaches as many passionate players as possible. He is a master at building communities.</p>
+        </div>
+
+        <!-- Team Member 4 -->
+        <div class="team-card">
+          <h4>Alice Johnson</h4>
+          <p>Community Manager</p>
+          <p>Alice connects with our fans and ensures that every player's voice is heard. She loves interacting with players and making their experience better.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <p>&copy; 2024 Epic Games, Inc. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

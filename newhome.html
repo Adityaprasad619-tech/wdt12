@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Epic Games - Home</title>
+  <link rel="stylesheet" href="home.css">
+  <!-- Link to Google Font for unique typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<style>
+  /* General Styles */
+  body {
+    font-family: 'Poppins', sans-serif; /* Applying the unique font */
+    background-image: url("home2.webp");
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  
+  /* Adjusted Logo */
+  .logo img {
+    height: 40px;
+    width: auto;
+  }
+
+  /* Header Section */
+  header {
+    background-color: #2d2d2d;
+    padding: 10px 20px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar .logo a {
+    color: #f0f0f0;
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+  .navbar nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  .navbar nav ul li {
+    margin-right: 20px;
+  }
+
+  .navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .auth {
+    display: flex;
+  }
+
+  .auth button {
+    margin-left: 10px;
+    background-color: #444;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .auth button:hover {
+    background-color: #666;
+  }
+
+  .cart {
+    color: white;
+    font-size: 18px;
+  }
+
+  /* Banner Section */
+  .banner {
+    background-color: #1e1e1e;
+    padding: 100px 20px;
+    text-align: center;
+  }
+
+  .banner h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  .banner p {
+    font-size: 24px;
+  }
+
+  .cta-btn {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: none;
+    cursor: pointer;
+  }
+
+  .cta-btn:hover {
+    background-color: #ddd;
+  }
+
+  /* Featured Games Section */
+  .featured-games {
+    background-image: url(main2.webp);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .game-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .game-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .game-card img {
+    max-width: 100%;
+    border-radius: 4px;
+  }
+
+  .game-card h3 {
+    margin: 10px 0;
+  }
+
+  .game-btn {
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .game-btn:hover {
+    background-color: #666;
+  }
+
+  /* Footer Section */
+  footer {
+    background-color: #2d2d2d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  footer p {
+    margin: 0;
+  }
+
+  footer a {
+    color: #f0f0f0;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* Cart logo and cart item count */
+  .cart {
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .cart img {
+    width: 30px;
+    height: auto;
+  }
+</style>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <a href="home.html">
+          <img src="https://logos-world.net/wp-content/uploads/2021/12/Epic-Games-Logo.png" alt="Epic Games Logo">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Store</a></li>
+          <li><a href="lib.html">Library</a></li>
+          <li><a href="support.html">Contact us</a></li>
+          <li><a href="payment.html">Checkout</a></li>
+        </ul>
+      </nav>
+      <div class="auth">
+        <button class="login-btn"><a href="log.html">Login</a></button>
+        <a href="signup.html"><button class="signup-btn">Sign Up</button></a>
+      </div>
+      <div class="cart" onclick="window.location.href='addtocart.html'">
+        <img src="https://t3.ftcdn.net/jpg/03/14/85/06/360_F_314850659_2aQLerz30kWj78tqpaGSbzYD6sAUmuDf.jpg" alt="Cart Icon"> <span id="cart-count">0</span> items
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner Section and Featured Games Section... -->
+
+  <div class="featured-games">
+    <h2>Featured Games</h2>
+  </div>
+  <section>
+    <div class="game-cards">
+      <!-- Game 1 -->
+      <div class="game-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfUcUimumNP5q1q5dhIRvcXwCODj4V6fAt1g&s" alt="Game 1">
+        <h3>Red Dead Redemption 2</h3>
+        <p>$1000</p>
+        <button class="game-btn" onclick="addToCart('Red Dead Redemption 2', 1000, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfUcUimumNP5q1q5dhIRvcXwCODj4V6fAt1g&s')">Add to cart</button>
+      </div>
+      <!-- Game 2 -->
+      <div class="game-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ_VPLxrrxd0yUBWDjGAO7_a_qT6k0y9QZ0A&s" alt="Game 2">
+        <h3>Grand Theft Auto VI</h3>
+        <p>$2000</p>
+        <button class="game-btn" onclick="addToCart('Game Title 2', 2000)">Add to cart</button>
+      </div>
+      <!-- Game 3 -->
+      <div class="game-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBe2MZ1Sv0iApAkhfTeS7k-7l8ohfqab2Tug&s" alt="Game 3">
+        <h3>Grand Theft Auto V</h3>
+        <p>$2000</p>
+        <button class="game-btn" onclick="addToCart('Game Title 3', 2000)">Add to cart</button>
+      </div>
+      <!-- Game 4 -->
+      <div class="game-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJyJifUg4aMlMtTfEsdU0D2RgM709m1W7Ljw&s" alt="Game 4">
+        <h3>Max Payne 2</h3>
+        <p>$1500</p>
+        <button class="game-btn" onclick="addToCart('Game Title 4', 1500)">Add to cart</button>
+      </div>
+      <!-- Game 5 -->
+      <div class="game-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUoxBIr5LQjX7G5ddbxWwuat3WR4Z8p4Lxvw&s" alt="Game 5">
+        <h3>RESIDENT EVIL 8</h3>
+        <p>$2700</p>
+        <button class="game-btn" onclick="addToCart('Game Title 5', 2700)">Add to cart</button>
+      </div>
+      <!-- Game 6 -->
+      <div class="game-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVWby7-4Cfea9N0GFZhbACW901se1pKlQufQ&s" alt="Game 6">
+        <h3>RESIDENT EVIL 3</h3>
+        <p>$500</p>
+        <button class="game-btn" onclick="addToCart('Game Title 6', 500)">Add to cart</button>
+      </div>
+      <!-- Game 7 -->
+      <div class="game-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQwWf3zBoPY1QOiLuMGp6YSpbfjdVFELVg6A&s" alt="Game 7">
+        <h3>LAST OF US</h3>
+        <p>$700</p>
+        <button class="game-btn" onclick="addToCart('Game Title 7', 700)">Add to cart</button>
+      </div>
+      <!-- Game 8 -->
+      <div class="game-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRduEsYPSQVfX21I5OnQ-02_rxAGU9P2tin5w&s" alt="Game 8">
+        <h3>DAYS GONE</h3>
+        <p>$2700</p>
+        <button class="game-btn" onclick="addToCart('Game Title 8', 2700)">Add to cart</button>
+      </div>
+      <!-- Game 9 -->
+      <div class="game-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSezT1bTp9g8kzbTL44BC-kemOqQHlPw9V3Eg&s" alt="Game 9">
+        <h3>THE MATRIX</h3>
+        <p>$2000</p>
+        <button class="game-btn" onclick="addToCart('Game Title 9', 2000)">Add to cart</button>
+      </div>
+      <!-- Add more games as needed... -->
+    </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Epic Games | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </footer>
+
+  <script>
+    // Add to Cart Function
+    function addToCart(title, price, imgUrl) {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      const newItem = { title, price, imgUrl };
+
+      // Add the item to the cart
+      cart.push(newItem);
+      localStorage.setItem('cart', JSON.stringify(cart));
+
+      // Update the cart count
+      document.getElementById('cart-count').textContent = cart.length;
+
+      // Show an alert when item is added to cart
+      alert(`${title} has been added to your cart!`);
+    }
+
+    // Update cart count on page load
+    window.onload = function() {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      document.getElementById('cart-count').textContent = cart.length;
+    }
+  </script>
+
+</body>
+</html>
