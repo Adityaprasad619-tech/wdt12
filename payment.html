@@ -172,6 +172,80 @@
     width: 30px;
     height: auto;
   }
+   /* Responsive Design */
+    @media (max-width: 768px) {
+      .checkout-container {
+        padding: 15px;
+        max-width: 100%;
+      }
+
+      .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .cart-item .title {
+        margin-left: 0;
+        font-size: 16px;
+      }
+
+      .form-container input {
+        font-size: 14px;
+      }
+
+      .form-container button {
+        font-size: 16px;
+      }
+
+      .checkout-header h2 {
+        font-size: 28px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 10px;
+      }
+
+      .checkout-container {
+        max-width: 100%;
+        padding: 10px;
+      }
+
+      .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .cart-item .title {
+        font-size: 14px;
+      }
+
+      .form-container input {
+        font-size: 14px;
+      }
+
+      .form-container button {
+        font-size: 14px;
+      }
+
+      .checkout-header h2 {
+        font-size: 24px;
+      }
+
+      .navbar .logo img {
+        height: 50px;
+      }
+
+      .navbar nav ul {
+        display: block;
+        text-align: center;
+      }
+
+      .navbar nav ul li {
+        margin: 10px 0;
+      }
+    }
 </style>
 
 <body>
