@@ -175,7 +175,102 @@ body {
   footer p {
     margin: 0;
   }
-  
+  /* Responsive Design */
+@media (max-width: 1200px) {
+  .navbar .logo a {
+    font-size: 20px;
+  }
+
+  .navbar nav ul li a {
+    font-size: 16px;
+  }
+
+  .category-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .category-card h3 {
+    font-size: 20px;
+  }
+
+  .cta-btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar nav ul {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .navbar nav ul li {
+    margin: 10px 0;
+  }
+
+  .category-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .category-card h3 {
+    font-size: 18px;
+  }
+
+  .cta-btn {
+    font-size: 16px;
+  }
+
+  .banner h1 {
+    font-size: 36px;
+  }
+
+  .banner p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .navbar .logo a {
+    font-size: 18px;
+  }
+
+  .navbar nav ul li a {
+    font-size: 14px;
+  }
+
+  .category-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .category-card h3 {
+    font-size: 16px;
+  }
+
+  .cta-btn {
+    font-size: 14px;
+  }
+
+  .banner h1 {
+    font-size: 28px;
+  }
+
+  .banner p {
+    font-size: 16px;
+  }
+
+  .cart {
+    font-size: 14px;
+  }
+}
 </style>
 <body>
   <!-- Header Section -->
