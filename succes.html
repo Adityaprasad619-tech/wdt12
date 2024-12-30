@@ -75,7 +75,82 @@ body {
   .return-home-btn:hover {
     background-color: #444;
   }
-  
+  /* Media Queries for Responsiveness */
+
+/* For Tablets and smaller screens */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .navbar a {
+        font-size: 20px;
+    }
+
+    .payment-success {
+        padding: 30px;
+    }
+
+    .success-message h1 {
+        font-size: 28px;  /* Adjust heading font size for tablets */
+    }
+
+    .success-message p {
+        font-size: 16px;  /* Adjust paragraph font size */
+    }
+
+    .return-home-btn {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+}
+
+/* For Mobile Screens */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        font-size: 18px;  /* Smaller font for the navbar links */
+    }
+
+    .payment-success {
+        padding: 20px;
+    }
+
+    .success-message h1 {
+        font-size: 24px;  /* Smaller heading font size for mobile */
+    }
+
+    .success-message p {
+        font-size: 14px;  /* Smaller paragraph font size */
+    }
+
+    .return-home-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 14px;  /* Smaller text in the footer */
+    }
+}
 </style>
 <body>
 
